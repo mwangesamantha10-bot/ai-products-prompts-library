@@ -1,0 +1,136 @@
+{
+  "category": "Générateurs d'Images IA",
+  "version": "1.0",
+  "date": "2025-12-29",
+  "products": ["ChatGPT", "Google Gemini", "Grok", "Adobe Firefly", "Microsoft Copilot", "Shutterstock AI"],
+  "prompt_collections": {
+    "portraits_professionnels": {
+      "description": "Prompts pour créer des portraits professionnels de haute qualité",
+      "prompts": [
+        {
+          "name": "Portrait Corporate",
+          "prompt": "Professional headshot portrait of a [gender] [age] business executive, wearing a [color] suit, neutral gray background, soft studio lighting, sharp focus on eyes, 8K resolution, photorealistic",
+          "variables": ["gender", "age", "color"],
+          "best_for": ["ChatGPT", "Adobe Firefly"]
+        },
+        {
+          "name": "Portrait LinkedIn",
+          "prompt": "LinkedIn profile photo, friendly [gender] professional smiling confidently, business casual attire, blurred office background with natural lighting, warm tones, professional photography style",
+          "variables": ["gender"],
+          "best_for": ["ChatGPT", "Google Gemini"]
+        },
+        {
+          "name": "Portrait Créatif",
+          "prompt": "Creative professional portrait of a [profession], artistic lighting with dramatic shadows, [color scheme] color palette, modern studio setting, fashion photography style, high detail",
+          "variables": ["profession", "color scheme"],
+          "best_for": ["Grok", "Adobe Firefly"]
+        }
+      ]
+    },
+    "produits_ecommerce": {
+      "description": "Prompts pour images de produits e-commerce",
+      "prompts": [
+        {
+          "name": "Produit sur Fond Blanc",
+          "prompt": "Product photography of [product], pure white background, professional studio lighting, multiple angles view, high resolution, commercial quality, clean and minimalist",
+          "variables": ["product"],
+          "best_for": ["Adobe Firefly", "Shutterstock AI"]
+        },
+        {
+          "name": "Produit Lifestyle",
+          "prompt": "[Product] in a lifestyle setting, [environment] background, natural lighting, aspirational mood, Instagram-worthy composition, soft shadows, warm color grading",
+          "variables": ["Product", "environment"],
+          "best_for": ["ChatGPT", "Google Gemini"]
+        },
+        {
+          "name": "Produit 360",
+          "prompt": "360-degree product view of [product], floating in space, soft gradient background from [color1] to [color2], professional product photography, reflective surface, studio lighting",
+          "variables": ["product", "color1", "color2"],
+          "best_for": ["Adobe Firefly", "Microsoft Copilot"]
+        }
+      ]
+    },
+    "illustrations_marketing": {
+      "description": "Prompts pour illustrations marketing et publicitaires",
+      "prompts": [
+        {
+          "name": "Bannière Publicitaire",
+          "prompt": "Modern advertising banner design for [product/service], bold typography space, [color] gradient background, dynamic composition, eye-catching visuals, marketing material style",
+          "variables": ["product/service", "color"],
+          "best_for": ["Adobe Firefly", "ChatGPT"]
+        },
+        {
+          "name": "Infographie",
+          "prompt": "Clean infographic illustration about [topic], flat design style, [color palette] colors, icons and data visualization elements, professional business graphics, vector art style",
+          "variables": ["topic", "color palette"],
+          "best_for": ["Microsoft Copilot", "ChatGPT"]
+        },
+        {
+          "name": "Social Media Post",
+          "prompt": "Engaging social media post image for [platform], [theme] theme, vibrant colors, modern design, attention-grabbing composition, square format, trendy aesthetic",
+          "variables": ["platform", "theme"],
+          "best_for": ["ChatGPT", "Google Gemini"]
+        }
+      ]
+    },
+    "art_digital": {
+      "description": "Prompts pour création artistique digitale",
+      "prompts": [
+        {
+          "name": "Art Conceptuel",
+          "prompt": "Concept art of [subject], [art style] style, dramatic lighting, rich details, cinematic composition, digital painting, trending on ArtStation, 4K resolution",
+          "variables": ["subject", "art style"],
+          "best_for": ["Grok", "ChatGPT"]
+        },
+        {
+          "name": "Illustration Fantasy",
+          "prompt": "Fantasy illustration of [scene], magical atmosphere, ethereal lighting, [color mood] color palette, highly detailed, epic composition, digital art masterpiece",
+          "variables": ["scene", "color mood"],
+          "best_for": ["Grok", "Google Gemini"]
+        },
+        {
+          "name": "Art Abstrait",
+          "prompt": "Abstract art composition, [emotion] mood, fluid shapes, [colors] color harmony, contemporary art style, museum quality, high resolution print ready",
+          "variables": ["emotion", "colors"],
+          "best_for": ["Adobe Firefly", "ChatGPT"]
+        }
+      ]
+    },
+    "immobilier_architecture": {
+      "description": "Prompts pour visualisation immobilière et architecturale",
+      "prompts": [
+        {
+          "name": "Rendu Intérieur",
+          "prompt": "Photorealistic interior design render of a [room type], [style] style, natural daylight through large windows, high-end furniture, warm ambiance, architectural visualization",
+          "variables": ["room type", "style"],
+          "best_for": ["ChatGPT", "Adobe Firefly"]
+        },
+        {
+          "name": "Extérieur Architectural",
+          "prompt": "Architectural exterior visualization of a [building type], modern [style] design, landscaped surroundings, golden hour lighting, professional architectural photography",
+          "variables": ["building type", "style"],
+          "best_for": ["ChatGPT", "Google Gemini"]
+        },
+        {
+          "name": "Vue Aérienne",
+          "prompt": "Aerial view of [property/development], drone photography style, [time of day] lighting, surrounding neighborhood visible, real estate marketing quality",
+          "variables": ["property/development", "time of day"],
+          "best_for": ["Google Gemini", "Microsoft Copilot"]
+        }
+      ]
+    }
+  },
+  "tips": {
+    "general": [
+      "Toujours spécifier la résolution souhaitée (4K, 8K)",
+      "Inclure le style d'éclairage pour plus de contrôle",
+      "Utiliser des termes comme 'photorealistic' pour des images réalistes",
+      "Mentionner 'trending on ArtStation' pour un style artistique moderne"
+    ],
+    "commercial_use": [
+      "Adobe Firefly est le plus sûr pour usage commercial",
+      "Vérifier les licences avant utilisation commerciale",
+      "Éviter les marques déposées dans les prompts"
+    ]
+  }
+}

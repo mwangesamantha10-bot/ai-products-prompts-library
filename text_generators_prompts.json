@@ -1,0 +1,141 @@
+{
+  "category": "Générateurs de Texte / LLMs",
+  "version": "1.0",
+  "date": "2025-12-29",
+  "products": ["Gemini 3 Flash", "Gemini 3 Pro", "Claude 3.5", "Nemotron 3", "UnAIMyText", "Muses"],
+  "prompt_collections": {
+    "copywriting_marketing": {
+      "description": "Prompts pour rédaction marketing et publicitaire",
+      "prompts": [
+        {
+          "name": "Page de Vente",
+          "prompt": "Rédige une page de vente persuasive pour [produit/service]. Inclus: un titre accrocheur avec bénéfice principal, 3 points de douleur du client, la solution apportée, 5 bénéfices clés avec preuves, 3 témoignages fictifs réalistes, une offre irrésistible avec urgence, et un appel à l'action fort. Ton: [ton souhaité]. Longueur: environ 1500 mots.",
+          "variables": ["produit/service", "ton souhaité"],
+          "best_for": ["Claude 3.5", "Gemini 3 Pro"]
+        },
+        {
+          "name": "Email Sequence",
+          "prompt": "Crée une séquence de 5 emails marketing pour [objectif]. Email 1: Introduction et accroche. Email 2: Problème et agitation. Email 3: Solution et preuves. Email 4: Objections et réponses. Email 5: Offre finale avec urgence. Chaque email: objet accrocheur, 200-300 mots, CTA clair.",
+          "variables": ["objectif"],
+          "best_for": ["Claude 3.5", "Gemini 3 Flash"]
+        },
+        {
+          "name": "Posts Réseaux Sociaux",
+          "prompt": "Génère 10 posts [plateforme] pour promouvoir [produit/service]. Inclus: hooks variés, emojis appropriés, hashtags pertinents, CTAs différents. Mix de formats: questions, statistiques, témoignages, conseils, behind-the-scenes. Ton: [ton].",
+          "variables": ["plateforme", "produit/service", "ton"],
+          "best_for": ["Gemini 3 Flash", "Muses"]
+        }
+      ]
+    },
+    "contenu_blog_seo": {
+      "description": "Prompts pour articles de blog optimisés SEO",
+      "prompts": [
+        {
+          "name": "Article SEO Complet",
+          "prompt": "Rédige un article de blog SEO-optimisé sur [sujet]. Structure: titre H1 avec mot-clé principal, introduction engageante (150 mots), 5-7 sections H2 avec sous-sections H3, conclusion avec CTA. Inclus: mot-clé principal [mot-clé] naturellement (densité 1-2%), mots-clés secondaires, liens internes suggérés, méta-description (155 caractères). Longueur: 2000+ mots.",
+          "variables": ["sujet", "mot-clé"],
+          "best_for": ["Claude 3.5", "Gemini 3 Pro"]
+        },
+        {
+          "name": "Liste Article",
+          "prompt": "Crée un article listicle: '[Nombre] [Sujet] pour [Objectif]'. Pour chaque item: titre accrocheur, description détaillée (100-150 mots), avantages/inconvénients, conseil pratique. Introduction et conclusion incluses. Optimisé pour featured snippets.",
+          "variables": ["Nombre", "Sujet", "Objectif"],
+          "best_for": ["Gemini 3 Flash", "Claude 3.5"]
+        },
+        {
+          "name": "Guide Ultime",
+          "prompt": "Rédige le guide ultime sur [sujet]. Structure: table des matières cliquable, introduction (pourquoi ce guide), chapitres détaillés avec exemples pratiques, FAQ (10 questions), ressources complémentaires, conclusion actionnable. Longueur: 3000-5000 mots. Format: prêt à publier.",
+          "variables": ["sujet"],
+          "best_for": ["Gemini 3 Pro", "Claude 3.5"]
+        }
+      ]
+    },
+    "business_professionnel": {
+      "description": "Prompts pour documents business et professionnels",
+      "prompts": [
+        {
+          "name": "Business Plan Executive Summary",
+          "prompt": "Rédige un executive summary pour [entreprise/projet]. Inclus: vision et mission, problème résolu, solution unique, marché cible et taille, modèle économique, avantage concurrentiel, équipe clé, projections financières (3 ans), besoin de financement et utilisation. Format: 2 pages maximum, professionnel et convaincant.",
+          "variables": ["entreprise/projet"],
+          "best_for": ["Claude 3.5", "Gemini 3 Pro"]
+        },
+        {
+          "name": "Proposition Commerciale",
+          "prompt": "Crée une proposition commerciale pour [service] destinée à [type de client]. Sections: page de garde, compréhension du besoin, solution proposée, méthodologie, livrables, planning, équipe, tarification détaillée, conditions, prochaines étapes. Ton professionnel mais accessible.",
+          "variables": ["service", "type de client"],
+          "best_for": ["Claude 3.5", "Gemini 3 Pro"]
+        },
+        {
+          "name": "Rapport d'Analyse",
+          "prompt": "Génère un rapport d'analyse sur [sujet/données]. Structure: résumé exécutif, contexte, méthodologie, résultats clés (avec visualisations suggérées), analyse approfondie, recommandations prioritaires, plan d'action, annexes. Format professionnel avec numérotation.",
+          "variables": ["sujet/données"],
+          "best_for": ["Gemini 3 Pro", "Claude 3.5"]
+        }
+      ]
+    },
+    "scripts_scenarios": {
+      "description": "Prompts pour scripts vidéo et scénarios",
+      "prompts": [
+        {
+          "name": "Script YouTube",
+          "prompt": "Écris un script YouTube de [durée] minutes sur [sujet]. Structure: hook puissant (15 sec), intro avec promesse, contenu principal en sections claires, transitions engageantes, CTA mid-roll, conclusion mémorable, outro avec CTA abonnement. Inclus: indications de B-roll, moments d'engagement, timestamps suggérés.",
+          "variables": ["durée", "sujet"],
+          "best_for": ["Claude 3.5", "Muses"]
+        },
+        {
+          "name": "Script Publicité",
+          "prompt": "Crée un script publicitaire de [durée] secondes pour [produit]. Format: AIDA (Attention, Intérêt, Désir, Action). Inclus: dialogue/voix-off, descriptions visuelles, musique/son suggérés, super/textes à l'écran. Versions: émotionnelle et rationnelle.",
+          "variables": ["durée", "produit"],
+          "best_for": ["Gemini 3 Flash", "Claude 3.5"]
+        },
+        {
+          "name": "Script Podcast",
+          "prompt": "Développe un script/outline de podcast sur [sujet]. Durée: [minutes] minutes. Inclus: intro accrocheuse, questions de discussion, points de transition, anecdotes suggérées, segments récurrents, outro avec CTA. Format: conversationnel mais structuré.",
+          "variables": ["sujet", "minutes"],
+          "best_for": ["Claude 3.5", "Muses"]
+        }
+      ]
+    },
+    "humanisation_texte": {
+      "description": "Prompts pour humaniser le contenu IA",
+      "prompts": [
+        {
+          "name": "Humanisation Basique",
+          "prompt": "Réécris ce texte pour le rendre plus humain et naturel. Ajoute: variations de longueur de phrases, expressions idiomatiques appropriées, ton conversationnel, imperfections naturelles subtiles. Garde le sens et les informations clés. Texte: [texte à humaniser]",
+          "variables": ["texte à humaniser"],
+          "best_for": ["UnAIMyText", "Claude 3.5"]
+        },
+        {
+          "name": "Adaptation de Ton",
+          "prompt": "Transforme ce texte pour correspondre au ton [ton cible]. Audience: [audience]. Ajuste: vocabulaire, niveau de formalité, références culturelles, longueur des phrases. Maintiens l'information essentielle. Texte original: [texte]",
+          "variables": ["ton cible", "audience", "texte"],
+          "best_for": ["Claude 3.5", "Gemini 3 Flash"]
+        },
+        {
+          "name": "Anti-Détection IA",
+          "prompt": "Réécris ce contenu pour qu'il passe les détecteurs d'IA tout en gardant la qualité. Techniques: varier la structure, ajouter des opinions personnelles, inclure des exemples spécifiques, utiliser un style d'écriture unique. Texte: [texte]",
+          "variables": ["texte"],
+          "best_for": ["UnAIMyText"]
+        }
+      ]
+    }
+  },
+  "tips": {
+    "general": [
+      "Toujours spécifier le ton et l'audience cible",
+      "Demander des exemples concrets pour plus de pertinence",
+      "Utiliser le format de sortie souhaité dans le prompt",
+      "Itérer avec des demandes de révision spécifiques"
+    ],
+    "seo": [
+      "Inclure les mots-clés dans le prompt",
+      "Demander une structure avec H1, H2, H3",
+      "Spécifier la longueur minimale pour le SEO"
+    ],
+    "commercial_use": [
+      "Les textes générés sont généralement libres de droits",
+      "Vérifier et personnaliser avant publication",
+      "Éviter le plagiat en demandant du contenu original"
+    ]
+  }
+}

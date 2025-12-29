@@ -1,0 +1,156 @@
+{
+  "category": "Générateurs de Vidéos IA",
+  "version": "1.0",
+  "date": "2025-12-29",
+  "products": ["Viggle AI", "freebeat.ai", "Pika 2.1", "Wan 2.6", "Kling 2.6 Pro", "Runway", "Argil"],
+  "prompt_collections": {
+    "videos_marketing": {
+      "description": "Prompts pour vidéos marketing et publicitaires",
+      "prompts": [
+        {
+          "name": "Publicité Produit",
+          "prompt": "Cinematic product reveal video of [product], smooth camera movement orbiting around the product, dramatic lighting with lens flares, [background color] gradient background, professional commercial quality, 4K resolution",
+          "variables": ["product", "background color"],
+          "duration": "5-10 seconds",
+          "best_for": ["Runway", "Kling 2.6 Pro"]
+        },
+        {
+          "name": "Teaser Lancement",
+          "prompt": "Dynamic teaser video for [product/brand] launch, fast-paced editing, modern typography animations, energetic transitions, [mood] atmosphere, corporate video style",
+          "variables": ["product/brand", "mood"],
+          "duration": "15 seconds",
+          "best_for": ["Pika 2.1", "Runway"]
+        },
+        {
+          "name": "Testimonial Style",
+          "prompt": "Professional talking head video style, [person description] speaking to camera, office background with bokeh, natural lighting, corporate interview aesthetic",
+          "variables": ["person description"],
+          "duration": "10-15 seconds",
+          "best_for": ["Argil", "Wan 2.6"]
+        }
+      ]
+    },
+    "videos_reseaux_sociaux": {
+      "description": "Prompts pour contenu réseaux sociaux",
+      "prompts": [
+        {
+          "name": "TikTok/Reels Trend",
+          "prompt": "Trendy vertical video, [subject] doing [action], energetic movement, vibrant colors, fast transitions, Gen-Z aesthetic, viral potential, 9:16 aspect ratio",
+          "variables": ["subject", "action"],
+          "duration": "5-15 seconds",
+          "best_for": ["Viggle AI", "Pika 2.1"]
+        },
+        {
+          "name": "Story Instagram",
+          "prompt": "Instagram story style video, [content type], aesthetic filters, smooth transitions, text overlay space, lifestyle mood, vertical format",
+          "variables": ["content type"],
+          "duration": "5-10 seconds",
+          "best_for": ["Pika 2.1", "Argil"]
+        },
+        {
+          "name": "YouTube Intro",
+          "prompt": "Professional YouTube channel intro, [channel theme] theme, dynamic logo animation, energetic music sync, modern motion graphics, 16:9 format",
+          "variables": ["channel theme"],
+          "duration": "5-8 seconds",
+          "best_for": ["Runway", "Kling 2.6 Pro"]
+        }
+      ]
+    },
+    "videos_musicales": {
+      "description": "Prompts pour clips musicaux et visualisations",
+      "prompts": [
+        {
+          "name": "Clip Musical Abstract",
+          "prompt": "Abstract music video visualization, [genre] music style, flowing colors and shapes, beat-synchronized movements, psychedelic atmosphere, artistic expression",
+          "variables": ["genre"],
+          "duration": "15 seconds",
+          "best_for": ["freebeat.ai", "Runway"]
+        },
+        {
+          "name": "Performance Musicale",
+          "prompt": "Music performance video, [artist type] performing [instrument/singing], concert lighting with [color] spotlights, smoke effects, cinematic angles",
+          "variables": ["artist type", "instrument/singing", "color"],
+          "duration": "10-15 seconds",
+          "best_for": ["freebeat.ai", "Kling 2.6 Pro"]
+        },
+        {
+          "name": "Lyric Video",
+          "prompt": "Animated lyric video style, [visual theme] background, kinetic typography, words appearing with [animation style], mood matching [emotion]",
+          "variables": ["visual theme", "animation style", "emotion"],
+          "duration": "15 seconds",
+          "best_for": ["freebeat.ai", "Pika 2.1"]
+        }
+      ]
+    },
+    "videos_cinematiques": {
+      "description": "Prompts pour vidéos style cinématographique",
+      "prompts": [
+        {
+          "name": "Scène Narrative",
+          "prompt": "Cinematic narrative scene, [character description] in [setting], [action/emotion], dramatic lighting, film grain, 24fps cinematic look, widescreen aspect ratio",
+          "variables": ["character description", "setting", "action/emotion"],
+          "duration": "10-15 seconds",
+          "best_for": ["Wan 2.6", "Runway"]
+        },
+        {
+          "name": "Paysage Épique",
+          "prompt": "Epic landscape video, [location type], sweeping drone shot, golden hour lighting, majestic atmosphere, nature documentary style, 4K cinematic",
+          "variables": ["location type"],
+          "duration": "10 seconds",
+          "best_for": ["Kling 2.6 Pro", "Runway"]
+        },
+        {
+          "name": "Action Sequence",
+          "prompt": "Dynamic action sequence, [subject] performing [action], slow motion moments, dramatic camera angles, intense atmosphere, Hollywood blockbuster style",
+          "variables": ["subject", "action"],
+          "duration": "5-10 seconds",
+          "best_for": ["Runway", "Kling 2.6 Pro"]
+        }
+      ]
+    },
+    "videos_animation": {
+      "description": "Prompts pour animations et motion design",
+      "prompts": [
+        {
+          "name": "Animation de Personnage",
+          "prompt": "Character animation, [character style] character, [action/movement], smooth motion, [art style] aesthetic, loop-ready, expressive animation",
+          "variables": ["character style", "action/movement", "art style"],
+          "duration": "5-10 seconds",
+          "best_for": ["Viggle AI", "Pika 2.1"]
+        },
+        {
+          "name": "Motion Graphics",
+          "prompt": "Professional motion graphics, [elements] animating smoothly, [color scheme] palette, corporate style, clean transitions, infographic animation",
+          "variables": ["elements", "color scheme"],
+          "duration": "10 seconds",
+          "best_for": ["Runway", "Pika 2.1"]
+        },
+        {
+          "name": "Logo Animation",
+          "prompt": "Logo reveal animation, [logo description] appearing with [effect type] effect, professional brand video, sleek and modern, business presentation quality",
+          "variables": ["logo description", "effect type"],
+          "duration": "3-5 seconds",
+          "best_for": ["Runway", "Kling 2.6 Pro"]
+        }
+      ]
+    }
+  },
+  "tips": {
+    "general": [
+      "Spécifier la durée souhaitée de la vidéo",
+      "Mentionner le format (16:9, 9:16, 1:1)",
+      "Inclure des détails sur le mouvement de caméra",
+      "Préciser le style d'éclairage souhaité"
+    ],
+    "lip_sync": [
+      "Wan 2.6 excelle pour le lip-sync natif",
+      "Utiliser des descriptions claires pour les expressions faciales",
+      "Fournir un audio de référence quand possible"
+    ],
+    "commercial_use": [
+      "Vérifier les droits de musique si audio inclus",
+      "Runway offre des licences commerciales claires",
+      "Éviter les personnages reconnaissables sans autorisation"
+    ]
+  }
+}

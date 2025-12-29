@@ -1,0 +1,208 @@
+{
+  "category": "Générateurs Audio / Voix IA",
+  "version": "1.0",
+  "date": "2025-12-29",
+  "products": ["ElevenLabs", "Eleven Music", "luvvoice", "VoiceType AI", "Ludo.ai Audio Generator"],
+  "prompt_collections": {
+    "voix_off_professionnelles": {
+      "description": "Prompts pour voix-off professionnelles",
+      "prompts": [
+        {
+          "name": "Voix-off Corporate",
+          "prompt": "Generate a professional corporate voiceover. Voice characteristics: [gender], [age range], [accent]. Tone: confident, authoritative yet approachable. Pace: moderate, clear articulation. Style: business presentation, suitable for company videos.",
+          "variables": ["gender", "age range", "accent"],
+          "settings": {
+            "stability": 0.75,
+            "clarity": 0.85,
+            "style": 0.3
+          },
+          "best_for": ["ElevenLabs", "luvvoice"]
+        },
+        {
+          "name": "Voix-off Documentaire",
+          "prompt": "Create a documentary-style narration voice. Voice: [gender], mature, authoritative. Tone: informative, engaging, slightly dramatic. Pace: measured with strategic pauses. Style: nature documentary or historical narrative.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.8,
+            "clarity": 0.9,
+            "style": 0.4
+          },
+          "best_for": ["ElevenLabs"]
+        },
+        {
+          "name": "Voix-off E-learning",
+          "prompt": "Generate an e-learning narration voice. Voice: [gender], friendly, patient. Tone: educational, encouraging, clear. Pace: slightly slower than conversational, with emphasis on key terms. Style: online course instructor.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.85,
+            "clarity": 0.9,
+            "style": 0.2
+          },
+          "best_for": ["ElevenLabs", "luvvoice"]
+        }
+      ]
+    },
+    "publicite_marketing": {
+      "description": "Prompts pour voix publicitaires",
+      "prompts": [
+        {
+          "name": "Spot Radio Énergique",
+          "prompt": "Create an energetic radio ad voice. Voice: [gender], young adult. Tone: enthusiastic, exciting, urgent. Pace: fast but clear. Style: promotional, call-to-action focused. Energy level: high.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.6,
+            "clarity": 0.8,
+            "style": 0.7
+          },
+          "best_for": ["ElevenLabs"]
+        },
+        {
+          "name": "Publicité Luxe",
+          "prompt": "Generate a luxury brand advertisement voice. Voice: [gender], sophisticated. Tone: elegant, refined, aspirational. Pace: slow, deliberate. Style: high-end brand, whisper-like quality optional.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.85,
+            "clarity": 0.75,
+            "style": 0.5
+          },
+          "best_for": ["ElevenLabs", "luvvoice"]
+        },
+        {
+          "name": "Promo Réseaux Sociaux",
+          "prompt": "Create a social media promo voice. Voice: [gender], young, relatable. Tone: casual, friendly, authentic. Pace: conversational, natural. Style: influencer-like, Gen-Z appeal.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.65,
+            "clarity": 0.8,
+            "style": 0.6
+          },
+          "best_for": ["ElevenLabs", "luvvoice"]
+        }
+      ]
+    },
+    "personnages_narration": {
+      "description": "Prompts pour personnages et narration créative",
+      "prompts": [
+        {
+          "name": "Personnage Jeu Vidéo",
+          "prompt": "Create a video game character voice. Character type: [character type]. Voice: [gender], [age]. Personality: [personality traits]. Accent: [accent if any]. Emotion range: from calm to intense.",
+          "variables": ["character type", "gender", "age", "personality traits", "accent if any"],
+          "settings": {
+            "stability": 0.5,
+            "clarity": 0.75,
+            "style": 0.8
+          },
+          "best_for": ["ElevenLabs", "Ludo.ai Audio Generator"]
+        },
+        {
+          "name": "Narrateur Audiobook",
+          "prompt": "Generate an audiobook narrator voice. Genre: [genre]. Voice: [gender], expressive. Tone: engaging, emotionally varied. Pace: adaptable to content. Style: professional audiobook quality, character differentiation ability.",
+          "variables": ["genre", "gender"],
+          "settings": {
+            "stability": 0.7,
+            "clarity": 0.85,
+            "style": 0.6
+          },
+          "best_for": ["ElevenLabs"]
+        },
+        {
+          "name": "Assistant Virtuel",
+          "prompt": "Create a virtual assistant voice. Voice: [gender], neutral age. Tone: helpful, friendly, professional. Pace: clear, moderate. Style: AI assistant, Siri/Alexa-like but unique.",
+          "variables": ["gender"],
+          "settings": {
+            "stability": 0.9,
+            "clarity": 0.95,
+            "style": 0.2
+          },
+          "best_for": ["ElevenLabs", "luvvoice"]
+        }
+      ]
+    },
+    "musique_effets_sonores": {
+      "description": "Prompts pour musique et effets sonores IA",
+      "prompts": [
+        {
+          "name": "Musique de Fond Corporate",
+          "prompt": "Generate corporate background music. Style: modern, uplifting. Tempo: [BPM] BPM. Mood: professional, optimistic. Instruments: soft synths, light percussion, subtle piano. Duration: [duration] seconds. Use: presentation, corporate video.",
+          "variables": ["BPM", "duration"],
+          "best_for": ["Eleven Music"]
+        },
+        {
+          "name": "Jingle Publicitaire",
+          "prompt": "Create an advertising jingle. Style: [genre]. Tempo: catchy, memorable. Mood: [mood]. Duration: [duration] seconds. Requirements: hook in first 3 seconds, brand-friendly, royalty-free.",
+          "variables": ["genre", "mood", "duration"],
+          "best_for": ["Eleven Music"]
+        },
+        {
+          "name": "Ambiance Podcast",
+          "prompt": "Generate podcast intro/outro music. Style: [podcast genre] appropriate. Tempo: moderate. Mood: welcoming, professional. Duration: 15-30 seconds. Features: clear beginning and end, loop-friendly middle section.",
+          "variables": ["podcast genre"],
+          "best_for": ["Eleven Music"]
+        },
+        {
+          "name": "Effets Sonores Jeu",
+          "prompt": "Create game sound effects. Type: [effect type]. Style: [game genre]. Quality: high-definition, clean. Variations: 3-5 variations of the same effect. Format: ready for game engine integration.",
+          "variables": ["effect type", "game genre"],
+          "best_for": ["Ludo.ai Audio Generator"]
+        }
+      ]
+    },
+    "clonage_vocal": {
+      "description": "Prompts pour clonage et personnalisation vocale",
+      "prompts": [
+        {
+          "name": "Clone Voix Standard",
+          "prompt": "Clone voice from provided sample. Maintain: original tone, accent, speech patterns. Optimize for: [use case]. Quality settings: high fidelity, natural prosody. Output: ready for [application type].",
+          "variables": ["use case", "application type"],
+          "requirements": "Audio sample of 1-3 minutes, clear quality",
+          "best_for": ["ElevenLabs"]
+        },
+        {
+          "name": "Adaptation Multilingue",
+          "prompt": "Adapt cloned voice for [target language]. Maintain: original voice characteristics. Adjust: pronunciation, intonation for target language. Quality: native-speaker natural.",
+          "variables": ["target language"],
+          "requirements": "Existing voice clone",
+          "best_for": ["ElevenLabs"]
+        }
+      ]
+    }
+  },
+  "voice_settings_guide": {
+    "stability": {
+      "description": "Contrôle la cohérence de la voix",
+      "low": "Plus expressif, varié (0.3-0.5)",
+      "medium": "Équilibré (0.5-0.7)",
+      "high": "Plus stable, prévisible (0.7-0.9)"
+    },
+    "clarity": {
+      "description": "Netteté et articulation",
+      "low": "Plus naturel, moins net (0.5-0.7)",
+      "high": "Très clair, articulé (0.8-1.0)"
+    },
+    "style": {
+      "description": "Expressivité et émotion",
+      "low": "Neutre, factuel (0.1-0.3)",
+      "medium": "Modérément expressif (0.4-0.6)",
+      "high": "Très expressif, dramatique (0.7-1.0)"
+    }
+  },
+  "tips": {
+    "general": [
+      "Toujours spécifier le genre et l'âge de la voix",
+      "Inclure le contexte d'utilisation pour de meilleurs résultats",
+      "Tester plusieurs variations avant de finaliser",
+      "Ajuster les paramètres de stabilité selon le besoin"
+    ],
+    "quality": [
+      "Utiliser des échantillons audio de haute qualité pour le clonage",
+      "Éviter les bruits de fond dans les échantillons",
+      "Préférer des enregistrements de 2-3 minutes minimum"
+    ],
+    "commercial_use": [
+      "ElevenLabs offre des licences commerciales claires",
+      "Vérifier les droits pour le clonage vocal",
+      "Obtenir le consentement pour cloner des voix réelles",
+      "Les voix synthétiques standard sont généralement libres de droits"
+    ]
+  }
+}
